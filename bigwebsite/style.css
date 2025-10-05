@@ -9,10 +9,12 @@ h1 {
     opacity: 1;
     text-decoration: underline white;
 
-.center-img {
-  display: block;
-  margin-left: 200;
-  margin-right: 300;
+img {
+  display: block; /* Important: Make the image a block-level element */
+  margin-left: auto;
+  margin-right: auto;
+  /* Optional: Set a width for the image if it's full-width by default */
+  width: 50%; 
 }
 
 .quoteV {
