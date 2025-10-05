@@ -1,12 +1,4 @@
-html, body {
-    position: relative;
-    min-height:2500;
-    min-width:25000;
-    overflow: auto;
-    background-color: white
 
-    
-}
 h1 {
     color: black;
     font: size 400px;
