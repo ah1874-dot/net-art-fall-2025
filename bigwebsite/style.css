@@ -57,13 +57,21 @@ letter-spacing: 1px;
 linae-height: 11px;
 }
 #lovely {
-    font-weight: italics;
+    font-weight: bold;
     font-size: 50px;
     position: absolute;
     right: 0;
     bottom: 0;
 
 }
+.answer {
+    font-weight: bold;
+    font-weight: 50px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+    
 
     
     
