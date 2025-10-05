@@ -7,7 +7,7 @@ h1 {
 
 .quoteV {
     color: black;
-    border: 200px solid red;
+    border: 20px solid red;
     margin: 400px;
     padding: 500px;
     font-family: cursive;
@@ -17,10 +17,10 @@ h1 {
 
 .quoteP {
     color: black;
-    border: 200px dotted black;
-    margin: 400px;
-    padding: 500px;
+    border: 20px dotted black;
+    margin: 40px;
+    padding: 50px;
     font-family: cursive;
-    font-size: 200px;
+    font-size: 20px;
     background: blue;
 }
