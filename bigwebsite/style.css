@@ -7,20 +7,20 @@ h1 {
 }
 
 .quoteV {
-    color: white;
-    border: 20px solid red;
-    margin: 40px;
-    padding: 50px;
+    color: black;
+    border: 200px solid red;
+    margin: 400px;
+    padding: 500px;
     font-family: cursive;
     font-size: 200px;
     background: yellow;
 }
 
 .quoteP {
-    color: white;
-    border: 20px dotted black;
-    margin: 40px;
-    padding: 50px;
+    color: black;
+    border: 200px dotted black;
+    margin: 400px;
+    padding: 500px;
     font-family: cursive;
     font-size: 200px;
     background: blue;
