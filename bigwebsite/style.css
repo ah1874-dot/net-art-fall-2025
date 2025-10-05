@@ -9,7 +9,7 @@ h1 {
   border: 2000px solid red;
   margin: 4090px;
   padding: 5000px;
-  font-family: "Comic Sans MS", cursive, sans-serif;
+  font-family: cursive
   font-size: 200px;
   background: yellow;
 }
@@ -19,7 +19,7 @@ h1 {
   border: 2000px dotted black;
   margin: 4000px;
   padding: 5000px;
-  font-family: sans-serif;
+  font-family: cursive
   font-size: 2000px;
   background: blue;
 }
