@@ -1,25 +1,27 @@
+
 body {
     background-color: green;
 }
 h1 {
     color: white;
+}
 
 .quoteV {
-  color: white;
-  border: 2000px solid red;
-  margin: 4090px;
-  padding: 5000px;
-  font-family: cursive
-  font-size: 200px;
-  background: yellow;
+    color: white;
+    border: 20px solid red;
+    margin: 40px;
+    padding: 50px;
+    font-family: cursive;
+    font-size: 200px;
+    background: yellow;
 }
 
 .quoteP {
-  color: white;
-  border: 2000px dotted black;
-  margin: 4000px;
-  padding: 5000px;
-  font-family: cursive
-  font-size: 2000px;
-  background: blue;
+    color: white;
+    border: 20px dotted black;
+    margin: 40px;
+    padding: 50px;
+    font-family: cursive;
+    font-size: 200px;
+    background: blue;
 }
