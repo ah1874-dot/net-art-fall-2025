@@ -57,9 +57,10 @@ linae-height: 11px;
 }
 #lovely {
     color: yellow;
-    position: absolute;
+    position: fixed;
     bottom: 0;
     left: 0;
+    right:0;
     
     
     
