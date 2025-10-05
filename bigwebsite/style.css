@@ -10,10 +10,9 @@ h1 {
     text-decoration: underline white;
 
 img {
-  display: block; /* Important: Make the image a block-level element */
+  display: block;
   margin-left: auto;
   margin-right: auto;
-  /* Optional: Set a width for the image if it's full-width by default */
   width: 50%; 
 }
 
