@@ -10,12 +10,6 @@
     width: 100%;                          
 }
 
-.grid-item {
-    background-image: url('https://digital-photography-school.com/wp-content/uploads/flickr/14718892840_10bba8ff6d_o-600x403.jpg'); /* Put path to your image here! This can be an image stored in your "quilt" folder or you can grab the image address of a image you find online, like I did here. */
-    background-size: cover; /* This will make sure the image cover the entire div. You can find other available values for this CSS property at https://www.w3schools.com/cssref/css3_pr_background-size.php */
-    background-position: center; /* This will center the image in the div. you can find other available values for this CSS property at https://www.w3schools.com/cssref/pr_background-position.php  */
-}
-
 .item1 { background-color: #FF5733; } 
 .item2 { background-color: #33FF57; }
 .item3 { background-color: #3357FF; } 
@@ -25,7 +19,3 @@
 .item7 { background-color: #FFA500; } 
 .item8 { background-color: #800080; } 
 .item9 { background-color: #FFD700; } 
-
-
-
-Resources
