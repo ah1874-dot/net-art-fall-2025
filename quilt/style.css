@@ -9,7 +9,7 @@
   width: 100%;
 }
 .grid-photo {
-  background-image: url(https://paintvine.co.nz/cdn/shop/articles/Portrait-of-the-Artist-with-a-Mocking-Face.jpg?v=1713402766);
+  background-image: url('https://paintvine.co.nz/cdn/shop/articles/Portrait-of-the-Artist-with-a-Mocking-Face.jpg?v=1713402766');
   background-size: cover;
   background-position: center;
 }
