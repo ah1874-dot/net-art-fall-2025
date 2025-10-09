@@ -9,13 +9,19 @@
     height: 100vh;                         
     width: 100%;                          
 }
+.grid-item {
+    background-image: url("https://media.timeout.com/images/106006274/1920/1440/image.webp");
+    background-size: cover;
+    background-position: center;
+}
 
-.item1 { background-color: #FF5733; } 
-.item2 { background-color: #33FF57; }
-.item3 { background-color: #3357FF; } 
-.item4 { background-color: #FFFF33; } 
-.item5 { background-color: #FF33FF; } 
-.item6 { background-color: #33FFFF; } 
-.item7 { background-color: #FFA500; } 
-.item8 { background-color: #800080; } 
-.item9 { background-color: #FFD700; }
+.item1 { background-color: blue; } 
+.item2 { background-color: black; }
+.item3 { background-color: blueviolet } 
+.item4 { background-color: blue; }    
+.item5 { background-color: black; } 
+.item6 { background-color: blueviolet; } 
+.item7 { background-color: blue; } 
+.item8 { background-color: black; } 
+.item9 { background-color: blueviolet; } 
+
