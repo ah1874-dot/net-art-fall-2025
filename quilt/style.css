@@ -1,0 +1,27 @@
+{ 
+  margin: 0;  
+}
+.grid-container {
+  display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto;
+    height: 100vh;                         
+    width: 100%;
+}
+.grid-photo {
+    background-image: url(https://paintvine.co.nz/cdn/shop/articles/Portrait-of-the-Artist-with-a-Mocking-Face.jpg?v=1713402766);
+    background-size: cover;
+    background-position: center;
+
+}
+.photo1 { background-color: blue; } 
+.photo2 { background-color: black; }
+.photo3 { background-color: blueviolet } 
+.photo4 { background-color: blue; } 
+.photo5 { background-color: black; } 
+.photo6 { background-color: blueviolet; } 
+.photo7 { background-color: blue; } 
+.photo8 { background-color: black; } 
+.photo9 { background-color: blueviolet; } 
+
+
