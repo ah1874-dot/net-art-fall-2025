@@ -13,12 +13,13 @@
   background-size: cover;
   background-position: center;
 }
-.item1 { background-color: blue; } 
-.item2 { background-color: black; }
-.item3 { background-color: blueviolet; } 
-.item4 { background-color: blue; } 
-.item5 { background-color: black; } 
-.item6 { background-color: blueviolet; } 
-.item7 { background-color: blue; } 
-.item8 { background-color: black; } 
-.item9 { background-color: blueviolet; } 
+/* No background colors on item classes */
+.item1 { } 
+.item2 { }
+.item3 { } 
+.item4 { } 
+.item5 { } 
+.item6 { } 
+.item7 { } 
+.item8 { } 
+.item9 { } 
