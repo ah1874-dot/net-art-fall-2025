@@ -2,26 +2,26 @@
     position: relative;
     width: 100%;
     height: 100vh;
-    overflow:hiddend;
+    overflow: hidden;
     display: flex;
     justify-content: flex-start;
     align-items: center;
-
 }
 
 .move-image {
-    width: 200 px;
+    width: 200px;
     position: relative;
+}
 
+.move-image:hover {
+    animation: moveLinear 7s ease-in-out infinite;
 }
-.move-image:hover{
-    animation:moveLinear 7s linear infinite;
-}
- @keyframes moveLinear {
-   0% {
-    transform:translateX(0);
-   }
-   100% {
-    transform: translateX(100vw);
-   }
+
+@keyframes moveLinear {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(100vw);
+    }
 }
