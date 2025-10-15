@@ -16,7 +16,6 @@
   }
 }
 
-.animate: hover {
+.animate:hover {
   animation: move 2s infinite alternate;
 }
-
