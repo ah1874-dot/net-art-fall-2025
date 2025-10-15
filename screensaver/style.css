@@ -7,21 +7,16 @@
     align-items: center;
 }
 
-.move-image {
-    width: 200px;
-    position: relative;
-    transition: transform 0.3s;
+@keyframes move {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(100px);
+  }
 }
 
-.move-image:hover {
-    animation: moveLinear 2s ease-in-out forwards;
+.animate: hover {
+  animation: move 2s infinite alternate;
 }
 
-@keyframes moveLinear {
-    0% {
-        transform: translateX(0);
-    }
-    100% {
-        transform: translateX(100vw);
-    }
-}
