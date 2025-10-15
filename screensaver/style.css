@@ -8,13 +8,18 @@
     align-items: center;
 }
 
+#moveToggle {
+    display: none;
+}
+
 .move-image {
     width: 200px;
     position: relative;
+    cursor: pointer;
 }
 
-.move-image:hover {
-    animation: moveLinear 7s linear infinite;
+#moveToggle:checked + label .move-image {
+    animation: moveLinear 7s linear forwards;
 }
 
 @keyframes moveLinear {
