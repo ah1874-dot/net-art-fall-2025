@@ -15,6 +15,10 @@
     transform: translateX(100px);
   }
 }
+@keyframes example {
+    from {background-color: red;}
+    to {background-color: yellow;}
+}
 
 .animate:hover {
   animation: move 2s infinite alternate;
