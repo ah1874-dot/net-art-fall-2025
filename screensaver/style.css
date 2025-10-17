@@ -1,25 +1,2 @@
-.image-container {
-    position: relative;
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-}
 
-@keyframes move {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(100px);
-  }
-}
-@keyframes example {
-    from {background-color: red;}
-    to {background-color: yellow;}
-}
 
-.animate:hover {
-  animation: move 2s infinite alternate;
-}
