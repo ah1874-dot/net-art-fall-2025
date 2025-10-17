@@ -6,28 +6,21 @@
     display: flex;
     justify-content: flex-start;
     align-items: center;
-
 }
 
 .move-image {
     width: 200 px;
     position: relative;
 
-}
-.move-image:hover{
-    animation:moveLinear 7s linear infinite;
-}
- @keyframes moveLinear {
-   0% {
-    transform:translateX(0);
-   }
-   100% {
-    transform: translateX(100vw);
-     
-}
-   @keyframes example {
-  from {background-color: red;}
-  to {background-color: yellow;}
+@keyframes move {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(100px);
+  }
 }
 
-
+.animate {
+  animation: move 2s infinite alternate;
+}
