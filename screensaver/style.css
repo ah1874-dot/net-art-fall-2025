@@ -1,14 +1,14 @@
-}
+
 body {
   margin: 0;
   padding: 0;
-  background-color: red;
+  background-color: blue;
   animation: backgroundFade 4s infinite alternate;
 }
 
 @keyframes backgroundFade {
   0% {
-    background-color: red;
+    background-color: blue;
   }
   100% {
     background-color: black;
