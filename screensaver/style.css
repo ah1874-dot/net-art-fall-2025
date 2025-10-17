@@ -9,18 +9,19 @@
 }
 
 .move-image {
-    width: 200 px;
+    width: 200px;
     position: relative;
+}
 
 @keyframes move {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(100px);
-  }
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(100px);
+    }
 }
 
 .animate {
-  animation: move 2s infinite alternate;
+    animation: move 2s infinite alternate;
 }
