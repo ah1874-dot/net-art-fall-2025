@@ -15,7 +15,13 @@ html, body {
   padding:10px;
   width:100px;
   height:100px;
+  
+.quote1 {
+  top: 100px;
+  left: 100px;
+  animation: move 2s infinite alternate;
 }
+
 @keyframes move {
   0% {
     transform: translateX(0);
@@ -25,22 +31,23 @@ html, body {
   }
 }
 
-.quote1 {
-  animation: move 2s infinite alternate;
+.quote2 {
+  top: 250px;
+  left: 100px;
+  animation-name: fadeOut;
+  animation-duration: 2s; 
+  animation-fill-mode: forwards; 
+  animation-delay: 1s;
+  animation-iteration-count: 1;
 }
+
 @keyframes fadeOut {
   0% {
     opacity: 1; 
     visibility: visible;
   }
   100% {
-    opacity: 0; /
-    visibility: hidden; /
+    opacity: 0; 
+    visibility: hidden;
   }
-
-.quote2 {
-  animation-name: fadeOut;
-  animation-duration: 2s; 
-  animation-fill-mode: forwards; 
-  animation-delay: 1s;
 }
