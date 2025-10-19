@@ -1,5 +1,5 @@
 html, body {
- position: absolute;
+ position: relative;
  min-heihgt:2500px;
  min-width: 2500px;
  overflow: auto;
