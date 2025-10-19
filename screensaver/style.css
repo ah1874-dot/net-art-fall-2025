@@ -1,22 +1,28 @@
- body {
-  min-height: 100vh;
-  background: blue;
-  margin: 0;
-  overflow: hidden;
+html, body {
+ position: relative;
+ min-hiehgt:2500px;
+ min-width: 2500px;
+ overflow: auto;
+ background-color: blue
 }
 
-.quote1, .quote2 {
-  width: 200px;
-  height: 100px;
-  background-color: green;
-  color: white;
-  font-weight: bold;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: absolute;
-  padding: 10px;
-  border-radius: 10px;
+.quote1 {
+    color: grey;
+    border: 2px solid black;
+    margin: 4px;
+    padding: 5px;
+    font-size: 16px;
+    background: blue;
+    font-family: Gotham, Arial, sans-serif;
+} 
+.quote2 {
+    color: grey;
+    border: 2px solid black;
+    margin: 4px;
+    padding: 5px;
+    font-size: 16px;
+    background: blue;
+    font-family: Gotham, Arial, sans-serif;
 } 
 
 .quote1 {
