@@ -1,53 +1,19 @@
-html, body {
-  min-height: 100vh;
-  background: blue;
-  margin: 0;
-  overflow: hidden;
+div {
+  background-color: pink;
+  padding:10px;
+  width:100px;
+  height:100px;
 }
 
-.quote1, .quote2 {
-  width: 200px;
-  height: 100px;
-  background-color: green;
-  color: white;
-  font-weight: bold;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: absolute;
-  padding: 10px;
-  border-radius: 10px;
-}
-
-/* quote1 moves side to side */
-.quote1 {
-  top: 100px;
-  left: 0;
-  animation: moveSideways 3s infinite alternate ease-in-out;
-}
-
-@keyframes moveSideways {
-  0% { transform: translateX(0); }
-  100% { transform: translateX(300px); }
-}
-
-/* quote2 fades out after 5 seconds */
-.quote2 {
-  top: 250px;
-  left: 100px;
-  animation: fadeOut 2s ease forwards;
-  animation-delay: 5s;
-  opacity: 1;
-  visibility: visible;
-}
-
-@keyframes fadeOut {
+@keyframes move {
   0% {
-    opacity: 1;
-    visibility: visible;
+    transform: translateX(0);
   }
   100% {
-    opacity: 0;
-    visibility: hidden;
+    transform: translateX(100px);
   }
+}
+
+.animate {
+  animation: move 2s infinite alternate;
 }
