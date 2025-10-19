@@ -1,6 +1,6 @@
 html, body {
- position: relative;
- min-hiehgt:2500px;
+ position: absolute;
+ min-heihgt:2500px;
  min-width: 2500px;
  overflow: auto;
  background-color: blue
