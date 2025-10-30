@@ -1,10 +1,9 @@
  html, body {
-    position: relative;
-    min-height: 2500px;
-    min-width: 2500px;
-    overflow: auto;
+    display: flex;
+    flex-direction: flow;
     background-color: rgb(4, 7, 32);
     color: white;
+    margin: 0;
 }
 
 .left {
