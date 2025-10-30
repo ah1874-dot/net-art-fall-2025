@@ -23,7 +23,9 @@
   }
   
   img {
+    disolay: center;
     width:25%;
+    length: 50%;
   }
   
   @media screen and (max-width: 992px) {
