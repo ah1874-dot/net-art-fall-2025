@@ -1,6 +1,9 @@
-body {
-  overflow: hidden;
-  background-color: rgb(4, 7, 32);
+ html, body {
+    position: relative;
+    min-height: 2500px;
+    min-width: 2500px;
+    overflow: auto;
+    background-color: rgb(4, 7, 32);
 }
 
 .left {
