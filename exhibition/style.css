@@ -28,6 +28,7 @@
   
   @media screen and (max-width: 992px) {
     .left {
+      color: white;
       width:60%;
       float:none;
       margin:0 auto;
@@ -35,6 +36,7 @@
       padding:0px;
     }
     .right {
+      color: white;
       width:80%;
       text-align:center;
       float:none;
