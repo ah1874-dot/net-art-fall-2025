@@ -4,6 +4,7 @@
     min-width: 2500px;
     overflow: auto;
     background-color: rgb(4, 7, 32);
+    color: white;
 }
 
 .left {
@@ -28,7 +29,6 @@
   
   @media screen and (max-width: 992px) {
     .left {
-      color: white;
       width:60%;
       float:none;
       margin:0 auto;
@@ -36,7 +36,6 @@
       padding:0px;
     }
     .right {
-      color: white;
       width:80%;
       text-align:center;
       float:none;
