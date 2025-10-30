@@ -2,6 +2,7 @@
     display: flex;
     flex-direction: flow;
     background-color: rgb(4, 7, 32);
+    font-family: 'Verdana', Geneva, sans-serif;
     color: white;
     margin: 0;
 }
