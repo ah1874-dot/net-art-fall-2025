@@ -12,5 +12,5 @@ function changeStyle() {
 
 let button = document.querySelector("#myButton");
 button.addEventListener("click", function() {
-  document.body.style.backgroundImage = "url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKozfz0e5O5tP5gJ2fgbptdXOZHi0bCr8_CQ&s')";
+  document.body.style.backgroundImage = "url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQR_74T1Qk6iei32TwGWiCaB2zfRh6GYFS89A&s')";
 });
