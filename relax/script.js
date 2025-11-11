@@ -14,10 +14,6 @@ let button = document.querySelector("#myButton");
 let vantaEffect = null;
 
 button.addEventListener("click", function() {
-
-  document.body.style.backgroundImage = "url('https://images.unsplash.com/photo-1731596691311-5955c052b66e?auto=format&fit=crop&q=60&w=600')";
-
-  
   if (!vantaEffect) {
     vantaEffect = VANTA.CLOUDS2({
       el: "#your-element-selector",
@@ -26,8 +22,8 @@ button.addEventListener("click", function() {
       gyroControls: false,
       minHeight: 200.00,
       minWidth: 200.00,
-      scale: 1.00,
-      texturePath: "./gallery/noise.png"
+      scale: 1.00
+      // texturePath optional — only needed if you have a local texture
     });
   }
 });
