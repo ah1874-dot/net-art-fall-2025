@@ -1,42 +1,30 @@
-.quote1 {
-    color: white;
-    border: 2px solid black;
-    margin: 2px;
-    padding: 2px;
-    font-size: 20px;
-    background: blue;
-    font-family: Gotham, Arial, sans-serif;
+function changeStyle() {
+  let textElement = document.querySelector("#myText");
+  textElement.style.cssText = `
+    color: rgb(143, 188, 139);
+    font-size: 30px;
+    font-style: italic;
+    background-color: rgba(0, 0, 0, 0.4);
+    padding: 10px;
+    border-radius: 8px;
+  `;
 }
 
-.quote2 {
-    color: white;
-    border: 4px solid black;
-    margin: 4px;
-    padding: 5px;
-    font-size: 16px;
-    background: blue;
-    font-family: Gotham, Arial, sans-serif;
-}
-span {
-  color: purple;
-  font-size: 50px;
-  font-family: courier;
-  text-transform: uppercase;
-letter-spacing: 1px;
-linae-height: 11px;
-}
-#lovely {
-    font-weight: bold;
-    font-size: 50px;
-    position: absolute;
-    right: 0;
-    bottom: 0;
+let button = document.querySelector("#myButton");
+button.addEventListener("click", function() {
+  document.body.style.backgroundImage = "url('https://images.unsplash.com/photo-1731596691311-5955c052b66e?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTl8fHdlYnNpdGUlMjBiYWNrZ3JvdW5kfGVufDB8fDB8fHww&auto=format&fit=crop&q=60&w=600')";
 
-}
-#answer {
-    font-weight: bold;
-    font-size: 50px;
-    position: absolute;
-    left: 0;
-    bottom: 0;
-}
+ <script>
+    VANTA.CLOUDS2({
+      el: "#your-element-selector",
+      mouseControls: true,
+      touchControls: true,
+      gyroControls: false,
+      minHeight: 200.00,
+      minWidth: 200.00,
+      scale: 1.00,
+      texturePath: "./gallery/noise.png"
+    })
+  </script>
+</body>
+</html>
