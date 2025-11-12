@@ -11,6 +11,7 @@
       width: 100%;
       overflow: hidden;
       color: white;
+      font-family: 'Segoe UI', sans-serif;
     }
 
     #vanta-bg {
@@ -23,6 +24,21 @@
       text-align: center;
       background-color: black;
     }
+
+    button {
+      margin: 10px;
+      padding: 10px 20px;
+      background-color: rgba(255,255,255,0.2);
+      color: white;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+
+    button:hover {
+      background-color: rgba(255,255,255,0.4);
+    }
   </style>
 </head>
 <body>
@@ -32,47 +48,18 @@
       by prayer and petition, with thanksgiving, present your requests to God.<br>
       And the peace of God, which transcends all understanding,<br>
       will guard your hearts and your minds in Christ Jesus.<br>
-      Philippians 4:6-7
+      <b>Philippians 4:6-7</b>
     </p>
 
     <button onclick="changeStyle()">Push</button>
     <button id="myButton">Tap</button>
   </div>
 
-  <!-- Dependencies -->
+
   <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.clouds2.min.js"></script>
+  
 
-  <script>
-    function changeStyle() {
-      let textElement = document.querySelector("#myText");
-      textElement.style.cssText = `
-        color: rgb(143, 188, 139);
-        font-size: 30px;
-        font-style: italic;
-        background-color: rgba(0, 0, 0, 0.4);
-        padding: 10px;
-        border-radius: 8px;
-      `;
-    }
-
-    let button = document.querySelector("#myButton");
-    let vantaEffect = null;
-
-    button.addEventListener("click", function() {
-      if (!vantaEffect) {
-        vantaEffect = VANTA.CLOUDS2({
-          el: "#vanta-bg",
-          mouseControls: true,
-          touchControls: true,
-          gyroControls: false,
-          minHeight: 200.00,
-          minWidth: 200.00,
-          scale: 1.00,
-          backgroundAlpha: 0.0
-        });
-      }
-    });
-  </script>
+  <script src="script.js"></script>
 </body>
 </html>
