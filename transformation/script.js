@@ -12,28 +12,33 @@ function fadeOut(element) {
   }, 1000); // matches CSS transition duration
 }
 
-document.querySelector("#push").addEventListener("click", () => {
-  const text1 = document.querySelector("#myText1");
-  const storm = document.querySelector("#stormImg");
+document.addEventListener("DOMContentLoaded", () => {
+  const pushBtn = document.querySelector("#push");
+  const tapBtn = document.querySelector("#tap");
 
-  fadeIn(text1);
-  fadeIn(storm);
+  pushBtn.addEventListener("click", () => {
+    const text1 = document.querySelector("#myText1");
+    const storm = document.querySelector("#stormImg");
 
-  setTimeout(() => {
-    fadeOut(text1);
-    fadeOut(storm);
-  }, 5000);
-});
+    fadeIn(storm);
+    fadeIn(text1);
 
-document.querySelector("#tap").addEventListener("click", () => {
-  const text2 = document.querySelector("#myText2");
-  const flowers = document.querySelector("#flowerImg");
+    setTimeout(() => {
+      fadeOut(text1);
+      fadeOut(storm);
+    }, 5000);
+  });
 
-  fadeIn(text2);
-  fadeIn(flowers);
+  tapBtn.addEventListener("click", () => {
+    const text2 = document.querySelector("#myText2");
+    const flowers = document.querySelector("#flowerImg");
 
-  setTimeout(() => {
-    fadeOut(text2);
-    fadeOut(flowers);
-  }, 7000);
+    fadeIn(flowers);
+    fadeIn(text2);
+
+    setTimeout(() => {
+      fadeOut(text2);
+      fadeOut(flowers);
+    }, 7000);
+  });
 });
