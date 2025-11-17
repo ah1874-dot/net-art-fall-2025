@@ -2,15 +2,13 @@ function fadeIn(element) {
   element.style.display = "block";
   setTimeout(() => {
     element.style.opacity = 1;
-  }, 50); // slight delay to trigger transition
-}
+  }, 50);
 
 function fadeOut(element) {
   element.style.opacity = 0;
   setTimeout(() => {
     element.style.display = "none";
-  }, 1000); // matches CSS transition duration
-}
+  }, 1000);
 
 document.addEventListener("DOMContentLoaded", () => {
   const pushBtn = document.querySelector("#push");
