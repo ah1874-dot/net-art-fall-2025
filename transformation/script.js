@@ -3,12 +3,14 @@ function fadeIn(element) {
   setTimeout(() => {
     element.style.opacity = 1;
   }, 50);
+}
 
 function fadeOut(element) {
   element.style.opacity = 0;
   setTimeout(() => {
     element.style.display = "none";
   }, 1000);
+}
 
 document.addEventListener("DOMContentLoaded", () => {
   const pushBtn = document.querySelector("#push");
