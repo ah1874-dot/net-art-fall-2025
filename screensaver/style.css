@@ -1,56 +1,42 @@
 html, body {
- position: relative;
- min-heihgt:2500px;
- min-width: 2500px;
- overflow: auto;
- background-color: blue
+  position: relative;
+  min-height: 2500px; 
+  max-width: 2500px; 
+  overflow: auto;
+  background-color: blue;
 }
 
-.quote1 {
-    color: grey;
-    border: 2px solid black;
-    margin: 4px;
-    padding: 5px;
-    font-size: 16px;
-    background: blue;
-    font-family: Gotham, Arial, sans-serif;
-} 
-.quote2 {
-    color: grey;
-    border: 2px solid black;
-    margin: 4px;
-    padding: 5px;
-    font-size: 16px;
-    background: blue;
-    font-family: Gotham, Arial, sans-serif;
-} 
+
+.quote1, .quote2 {
+  color: grey;
+  border: 2px solid black;
+  margin: 4px;
+  padding: 5px;
+  font-size: 16px;
+  background: blue;
+  font-family: Gotham, Arial, sans-serif;
+  position: relative;
+}
 
 .quote1 {
   top: 100px;
   left: 0;
-  animation: moveSideways 3s infinite alternate ease-in-out;
+  transition: transform 3s ease-in-out; 
 }
 
-@keyframes moveSideways {
-  0% { transform: translateX(0); }
-  100% { transform: translateX(300px); }
+.quote1:hover {
+  transform: translateX(300px);
 }
+
 
 .quote2 {
   top: 250px;
   left: 100px;
-  animation: fadeOut 2s ease forwards;
-  animation-delay: 5s;
   opacity: 1;
-  visibility: visible;
+  transition: opacity 2s ease;
 }
 
-@keyframes fadeOut {
-  0% {
-    opacity: 1;
-    visibility: visible;
-  }
-  100% {
-    opacity: 0;
-    visibility: hidden;
-  }
+.quote2:hover {
+  opacity: 0;
+  visibility: hidden;
+}
