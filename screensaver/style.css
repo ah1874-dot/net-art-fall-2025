@@ -33,19 +33,14 @@ html, body {
   to   { transform: translateX(300px); }
 }
 
+
 .quote2 {
   top: 250px;
   left: 100px;
   opacity: 1;
-  transition: opacity 1s ease;
+  transition: opacity 0.5s ease; 
 }
 
 .quote2:hover {
-  animation: fadeStay 15s forwards;
-}
-
-@keyframes fadeStay {
-  0%   { opacity: 1; }
-  5%   { opacity: 0; } 
-  100% { opacity: 1; }
+  opacity: 0; 
 }
