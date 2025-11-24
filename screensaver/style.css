@@ -21,23 +21,22 @@ html, body {
 .quote1 {
   top: 100px;
   left: 0;
-  animation: moveSideways 3s infinite alternate ease-in-out;
-  animation-play-state: paused; /* Start paused */
+  animation: moveSideways 3s infinite alternate ease-in-out paused;
 }
-
 
 .quote1:hover {
-  animation-play-state: running;
-}
-
-
-.quote1.ran {
-  animation-play-state: running !important;
+  animation: moveAlways 15s forwards;
 }
 
 @keyframes moveSideways {
   from { transform: translateX(0); }
   to   { transform: translateX(300px); }
+}
+
+
+@keyframes moveAlways {
+  0%   { animation-timing-function: ease-in-out; }
+  100% { animation-timing-function: ease-in-out; }
 }
 
 
@@ -48,8 +47,13 @@ html, body {
   transition: opacity 1s ease;
 }
 
-
 .quote2:hover {
-  opacity: 0;
-  pointer-events: none;   
+  animation: fadeStay 15s forwards;
 }
+
+@keyframes fadeStay {
+  0%   { opacity: 1; }
+  5%   { opacity: 0; } 
+  100% { opacity: 1; } 
+}
+
