@@ -25,20 +25,13 @@ html, body {
 }
 
 .quote1:hover {
-  animation: moveAlways 15s forwards;
+  animation-play-state: running;
 }
 
 @keyframes moveSideways {
   from { transform: translateX(0); }
   to   { transform: translateX(300px); }
 }
-
-
-@keyframes moveAlways {
-  0%   { animation-timing-function: ease-in-out; }
-  100% { animation-timing-function: ease-in-out; }
-}
-
 
 .quote2 {
   top: 250px;
@@ -54,6 +47,5 @@ html, body {
 @keyframes fadeStay {
   0%   { opacity: 1; }
   5%   { opacity: 0; } 
-  100% { opacity: 1; } 
+  100% { opacity: 1; }
 }
-
