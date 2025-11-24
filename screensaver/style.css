@@ -1,27 +1,28 @@
 html, body {
   position: relative;
-  min-height: 2500px; 
-  max-width: 2500px; 
+  min-height: 2500px;
+  max-width: 2500px;
   overflow: auto;
   background-color: blue;
 }
 
-
 .quote1, .quote2 {
   color: grey;
   border: 2px solid black;
-  margin: 4px;
-  padding: 5px;
-  font-size: 16px;
+  margin: 20px;
+  padding: 10px;
+  font-size: 18px;
   background: blue;
   font-family: Gotham, Arial, sans-serif;
   position: relative;
+  cursor: pointer;
+  transition: all 2s ease; 
 }
+
 
 .quote1 {
   top: 100px;
   left: 0;
-  transition: transform 3s ease-in-out; 
 }
 
 .quote1:hover {
@@ -33,7 +34,6 @@ html, body {
   top: 250px;
   left: 100px;
   opacity: 1;
-  transition: opacity 2s ease;
 }
 
 .quote2:hover {
