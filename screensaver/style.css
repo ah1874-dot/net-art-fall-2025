@@ -22,11 +22,17 @@ html, body {
   top: 100px;
   left: 0;
   animation: moveSideways 3s infinite alternate ease-in-out;
-  animation-play-state: paused;
+  animation-play-state: paused; /* Start paused */
 }
+
 
 .quote1:hover {
   animation-play-state: running;
+}
+
+
+.quote1.ran {
+  animation-play-state: running !important;
 }
 
 @keyframes moveSideways {
@@ -39,9 +45,11 @@ html, body {
   top: 250px;
   left: 100px;
   opacity: 1;
-  transition: opacity 2s ease;
+  transition: opacity 1s ease;
 }
+
 
 .quote2:hover {
   opacity: 0;
+  pointer-events: none;   
 }
