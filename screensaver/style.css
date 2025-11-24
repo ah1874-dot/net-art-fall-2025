@@ -6,6 +6,7 @@ html, body {
   background-color: blue;
 }
 
+
 .quote1, .quote2 {
   color: grey;
   border: 2px solid black;
@@ -16,17 +17,27 @@ html, body {
   font-family: Gotham, Arial, sans-serif;
   position: relative;
   cursor: pointer;
-  transition: all 2s ease; 
 }
 
 
 .quote1 {
   top: 100px;
   left: 0;
+
+ 
+  animation: moveSideways 3s infinite alternate ease-in-out;
+  animation-play-state: paused;
 }
 
+
 .quote1:hover {
-  transform: translateX(300px);
+  animation-play-state: running;
+}
+
+
+@keyframes moveSideways {
+  from { transform: translateX(0); }
+  to   { transform: translateX(300px); }
 }
 
 
@@ -34,6 +45,7 @@ html, body {
   top: 250px;
   left: 100px;
   opacity: 1;
+  transition: opacity 2s ease;
 }
 
 .quote2:hover {
