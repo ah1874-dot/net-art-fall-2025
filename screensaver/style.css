@@ -6,7 +6,6 @@ html, body {
   background-color: blue;
 }
 
-
 .quote1, .quote2 {
   color: grey;
   border: 2px solid black;
@@ -19,21 +18,16 @@ html, body {
   cursor: pointer;
 }
 
-
 .quote1 {
   top: 100px;
   left: 0;
-
- 
   animation: moveSideways 3s infinite alternate ease-in-out;
   animation-play-state: paused;
 }
 
-
 .quote1:hover {
   animation-play-state: running;
 }
-
 
 @keyframes moveSideways {
   from { transform: translateX(0); }
@@ -50,5 +44,4 @@ html, body {
 
 .quote2:hover {
   opacity: 0;
-  visibility: hidden;
 }
