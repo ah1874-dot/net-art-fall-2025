@@ -14,7 +14,17 @@
     background-size: cover;
     background-position: center;
 }
+.grid-item{
+    background-image:url(https://static.demilked.com/wp-content/uploads/2022/09/632022d8216fc-Classical-Art-in-contemporary-life-626ba2713f812__880.jpg)
+}
+.grid-item{
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSWAThDEvv5islfseqJu2B9rkCW4sJzCbIBBfTW-rTFsOILPYRR8h_RptDw9GPupFD6QyA&usqp=CAU)
 
+}
+.grid-item{
+    background-image: url(https://pleated-jeans.com/wp-content/uploads/2024/11/funny-classical-art-memes-11-19-24-1.jpg)
+
+        
 .item1 { background-color: blue; } 
 .item2 { background-color: black; }
 .item3 { background-color: blueviolet } 
