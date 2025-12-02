@@ -1,59 +1,70 @@
-* {
-    margin: 0;
-    padding: 0;
+#image-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
 }
 
-html, body {
-    height: 100%; 
+.img-container {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
 }
 
-.grid-container {
-    display: grid;
-    height: 100vh;          
-    width: 100vw;            
-    grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: repeat(4, 1fr);
+.img-container img {
+  width: 100%;
+  height: auto;
+  display: block;
 }
 
-.grid-item {
-    width: 100%;
-    height: 100%;
-    background-size: cover;
-    background-position: center;
+.img-base {
+  opacity: 1;
+  transition: opacity 0.3s ease;
+  position: relative;
+  z-index: 1;
 }
 
-.img1 {
-    background-image: url("https://upload.wikimedia.org/wikipedia/commons/8/8c/David_-_The_Death_of_Socrates.jpg");
-}
-        
-.img1a {
-    background-image: url("https://upload.wikimedia.org/wikipedia/commons/8/8c/David_-_The_Death_of_Socrates.jpg");
-}
-.img2 {
-    background-image: url("https://upload.wikimedia.org/wikipedia/commons/f/fc/Edward_Portielje_-_The_winning_Hand.jpg");
-}
-    
-.img2a{
-    background-image: url("https://upload.wikimedia.org/wikipedia/commons/f/fc/Edward_Portielje_-_The_winning_Hand.jpg");
+.img-hover {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  position: absolute;
+  inset: 0;
+  z-index: 2;
 }
 
-.img3 {
-    background-image: url("https://media.mutualart.com/Images/2022_11/30/10/100323224/edward-cucuel-les-yachts-70NI2-338.Jpeg");
+
+.img-text,
+.img-text-hover {
+  position: absolute;
+  top: 50%;
+  left: 20px;      
+  transform: translateY(-50%);
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  text-shadow: 0 0 5px black;
+  width: 40%;      
+  text-align: left;
+  transition: opacity 0.3s ease;
+  z-index: 3;
 }
 
-.img3a {
-    background-image: url("https://media.mutualart.com/Images/2022_11/30/10/100323224/edward-cucuel-les-yachts-70NI2-338.Jpeg");
-
-.img4 {
-    background-image: url("https://upload.wikimedia.org/wikipedia/commons/9/93/Wybrand_Hendriks_-_Interieur_met_een_slapende_man_en_een_vrouw_die_sokken_stopt_-_BR2876_-_Rijksmuseum_Twenthe.jpg");
-
+.img-text-hover {
+  opacity: 0;
 }
-.img4a {
-    background-image: url("https://upload.wikimedia.org/wikipedia/commons/9/93/Wybrand_Hendriks_-_Interieur_met_een_slapende_man_en_een_vrouw_die_sokken_stopt_-_BR2876_-_Rijksmuseum_Twenthe.jpg");
 
-.img5 {
-    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ00nZB1RN92xHonZ5S7jywweMeSz_jgdU7_Z2xC1XyrBe3TZxfrarDf9p3YwQC-Lx-B28&usqp=CAU");
+
+.img-container:hover .img-base {
+  opacity: 0;
 }
-.img5a {
-    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ00nZB1RN92xHonZ5S7jywweMeSz_jgdU7_Z2xC1XyrBe3TZxfrarDf9p3YwQC-Lx-B28&usqp=CAU");
+
+.img-container:hover .img-hover {
+  opacity: 1;
+}
+
+.img-container:hover .img-text {
+  opacity: 0;
+}
+
+.img-container:hover .img-text-hover {
+  opacity: 1;
 }
