@@ -1,32 +1,36 @@
+/* Grid container */
 #image-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 20px;
+  padding: 20px;
 }
 
-/* Container */
+/* Image container */
 .img-container {
   position: relative;
   width: 100%;
   overflow: hidden;
+  border-radius: 10px; /* optional, makes corners rounded */
 }
 
-/* Base + Hover images */
+/* Base + hover images */
 .img-container img {
   width: 100%;
+  height: auto;
   display: block;
+  object-fit: cover; /* ensures images cover container */
+  transition: opacity 0.3s ease;
 }
 
 .img-base {
   opacity: 1;
-  transition: opacity 0.3s ease;
   position: relative;
   z-index: 1;
 }
 
 .img-hover {
   opacity: 0;
-  transition: opacity 0.3s ease;
   position: absolute;
   inset: 0;
   z-index: 2;
@@ -36,19 +40,17 @@
 .img-text,
 .img-text-hover {
   position: absolute;
-  top: 50%;
+  bottom: 20px; /* appear near bottom for better readability */
   left: 20px;
-  transform: translateY(-50%);
   color: white;
-  font-size: 20px;
+  font-size: 18px;
   font-weight: bold;
   text-shadow: 0 0 5px black;
-  width: 40%;
+  width: 70%;
   z-index: 3;
   transition: opacity 0.3s ease;
 }
 
-/* Hover text hidden initially */
 .img-text-hover {
   opacity: 0;
 }
