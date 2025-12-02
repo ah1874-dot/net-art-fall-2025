@@ -1,50 +1,19 @@
-}
-.img1 {
-    background-image: url("https://upload.wikimedia.org/wikipedia/commons/8/8c/David_-_The_Death_of_Socrates.jpg");
-}
-.img1a {
-    background-image: url("https://upload.wikimedia.org/wikipedia/commons/8/8c/David_-_The_Death_of_Socrates.jpg");
-}
-.img2 {
-    background-image: url("https://upload.wikimedia.org/wikipedia/commons/f/fc/Edward_Portielje_-_The_winning_Hand.jpg");
-}
-.img2a {
-    background-image: url("https://upload.wikimedia.org/wikipedia/commons/f/fc/Edward_Portielje_-_The_winning_Hand.jpg");
-}
-.img3 {
-    background-image: url("https://media.mutualart.com/Images/2022_11/30/10/100323224/edward-cucuel-les-yachts-70NI2-338.Jpeg");
-}
-.img3a {
-    background-image: url("https://media.mutualart.com/Images/2022_11/30/10/100323224/edward-cucuel-les-yachts-70NI2-338.Jpeg");
-}
-.img4 {
-    background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/f/ff/Interior_with_a_Sleeping_Man_and_a_Woman_Darning_Socks_by_Wybrand_Hendriks.jpg/500px-Interior_with_a_Sleeping_Man_and_a_Woman_Darning_Socks_by_Wybrand_Hendriks.jpg");
-}
-img4a {
-    background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/f/ff/Interior_with_a_Sleeping_Man_and_a_Woman_Darning_Socks_by_Wybrand_Hendriks.jpg/500px-Interior_with_a_Sleeping_Man_and_a_Woman_Darning_Socks_by_Wybrand_Hendriks.jpg");
-}
-
-.img5 {
-    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1ZisKTWu5TG0rS3mgCWKDM5Hwcqz_mVL1og&s");
-}
-.img5a {
-     background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1ZisKTWu5TG0rS3mgCWKDM5Hwcqz_mVL1og&s")
-
 #image-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 20px;
 }
 
+/* Container */
 .img-container {
   position: relative;
   width: 100%;
   overflow: hidden;
 }
 
+/* Base + Hover images */
 .img-container img {
   width: 100%;
-  height: auto;
   display: block;
 }
 
@@ -63,28 +32,28 @@ img4a {
   z-index: 2;
 }
 
-
+/* Text overlays */
 .img-text,
 .img-text-hover {
   position: absolute;
   top: 50%;
-  left: 20px;      
+  left: 20px;
   transform: translateY(-50%);
   color: white;
   font-size: 20px;
   font-weight: bold;
   text-shadow: 0 0 5px black;
-  width: 40%;      
-  text-align: left;
-  transition: opacity 0.3s ease;
+  width: 40%;
   z-index: 3;
+  transition: opacity 0.3s ease;
 }
 
+/* Hover text hidden initially */
 .img-text-hover {
   opacity: 0;
 }
 
-
+/* Hover transitions */
 .img-container:hover .img-base {
   opacity: 0;
 }
