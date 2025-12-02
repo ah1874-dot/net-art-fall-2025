@@ -1,0 +1,43 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    height: 100%; 
+}
+
+.grid-container {
+    display: grid;
+    height: 100vh;          
+    width: 100vw;            
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+}
+
+.grid-item {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+}
+
+.img1 {
+    background-image: url("https://i.chzbgr.com/thumb1200/39492613/hF8BA4CC6/art-art-memes-memes-funny-memes-meme-dank-memes-random-memes-relatable-memes-lol-relatable-funny");
+}
+
+.img2 {
+    background-image: url("https://static.demilked.com/wp-content/uploads/2022/09/632022d8216fc-Classical-Art-in-contemporary-life-626ba2713f812__880.jpg");
+}
+
+.img3 {
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYthEZCVik7DCFq_oSPY4cRtjFSeyELnwvnw&s");
+}
+
+.img4 {
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSx4kvEoKqk3SDeSqQeWSEzc7fsY2pIazheGA&s");
+}
+
+.img5 {
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1ZisKTWu5TG0rS3mgCWKDM5Hwcqz_mVL1og&s");
+}
