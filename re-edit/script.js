@@ -1,4 +1,5 @@
-const items = [
+
+const baseItems = [
   {
     img: "img1",
     imgHover: "img1a",
@@ -31,8 +32,12 @@ const items = [
   }
 ];
 
+// --- NEW: Create 20 items by repeating the 5 originals ---
+const items = Array.from({ length: 20 }, (_, i) => baseItems[i % 5]);
+
 const grid = document.getElementById("image-grid");
 
+// --- Original block-generation logic (unchanged) ---
 items.forEach(item => {
   const container = document.createElement("div");
   container.className = "img-container";
