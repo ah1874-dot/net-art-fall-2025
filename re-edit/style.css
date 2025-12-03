@@ -1,45 +1,12 @@
-}
-.img1 {
-  background-image: url("https://upload.wikimedia.org/wikipedia/commons/8/8c/David_-_The_Death_of_Socrates.jpg");
-}
-.img1a {
-   background-image: url("https://upload.wikimedia.org/wikipedia/commons/8/8c/David_-_The_Death_of_Socrates.jpg");
-}
-.img2 {
-  background-image: url("https://upload.wikimedia.org/wikipedia/commons/f/fc/Edward_Portielje_-_The_winning_Hand.jpg");
-}
-.img2a {
-    background-image: url("https://upload.wikimedia.org/wikipedia/commons/f/fc/Edward_Portielje_-_The_winning_Hand.jpg");
-}
-.img3 {
-  background-image: url("https://media.mutualart.com/Images/2022_11/30/10/100323224/edward-cucuel-les-yachts-70NI2-338.Jpeg");
-}
-img3a {
-   background-image: url("https://media.mutualart.com/Images/2022_11/30/10/100323224/edward-cucuel-les-yachts-70NI2-338.Jpeg");
-}
-.img4 {
-  background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/f/ff/Interior_with_a_Sleeping_Man_and_a_Woman_Darning_Socks_by_Wybrand_Hendriks.jpg/500px-Interior_with_a_Sleeping_Man_and_a_Woman_Darning_Socks_by_Wybrand_Hendriks.jpg");
-}
-.img4a {
-  background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/f/ff/Interior_with_a_Sleeping_Man_and_a_Woman_Darning_Socks_by_Wybrand_Hendriks.jpg/500px-Interior_with_a_Sleeping_Man_and_a_Woman_Darning_Socks_by_Wybrand_Hendriks.jpg");
-}
-.img5{
-    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ00nZB1RN92xHonZ5S7jywweMeSz_jgdU7_Z2xC1XyrBe3TZxfrarDf9p3YwQC-Lx-B28&usqp=CAU");
-}
-.img5a
-   background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ00nZB1RN92xHonZ5S7jywweMeSz_jgdU7_Z2xC1XyrBe3TZxfrarDf9p3YwQC-Lx-B28&usqp=CAU");
-}
-  
-
-
-  #image-grid {
+/* GRID LAYOUT */
+#image-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 20px;
   padding: 20px;
 }
 
-
+/* IMAGE CONTAINER */
 .img-container {
   position: relative;
   width: 100%;
@@ -47,12 +14,12 @@ img3a {
   border-radius: 10px;
 }
 
-
+/* IMAGES */
 .img-container img {
   width: 100%;
   height: auto;
   display: block;
-  object-fit: cover; 
+  object-fit: cover;
   transition: opacity 0.3s ease;
 }
 
@@ -69,11 +36,11 @@ img3a {
   z-index: 2;
 }
 
-
+/* TEXT */
 .img-text,
 .img-text-hover {
   position: absolute;
-  bottom: 20px; 
+  bottom: 20px;
   left: 20px;
   color: white;
   font-size: 18px;
@@ -88,18 +55,8 @@ img3a {
   opacity: 0;
 }
 
-.img-container:hover .img-base {
-  opacity: 0;
-}
-
-.img-container:hover .img-hover {
-  opacity: 1;
-}
-
-.img-container:hover .img-text {
-  opacity: 0;
-}
-
-.img-container:hover .img-text-hover {
-  opacity: 1;
-}
+/* HOVER EFFECTS */
+.img-container:hover .img-base { opacity: 0; }
+.img-container:hover .img-hover { opacity: 1; }
+.img-container:hover .img-text { opacity: 0; }
+.img-container:hover .img-text-hover { opacity: 1; }
