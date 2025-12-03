@@ -1,61 +1,68 @@
+/* REMOVE ALL DEFAULT PAGE MARGINS & PADDING */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 /* GRID LAYOUT */
 #image-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 20px;
-  padding: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 0;                 /* No white space between images */
+  width: 100%;
 }
 
 /* IMAGE CONTAINER */
 .img-container {
   position: relative;
   width: 100%;
+  height: 300px;          /* Uniform image height */
   overflow: hidden;
-  border-radius: 10px;
 }
 
 /* IMAGES */
 .img-container img {
   width: 100%;
-  height: auto;
-  display: block;
-  object-fit: cover;
+  height: 100%;
+  object-fit: cover;      /* Ensures clean uniform layout */
+  position: absolute;
+  inset: 0;
   transition: opacity 0.3s ease;
 }
 
 .img-base {
   opacity: 1;
-  position: relative;
   z-index: 1;
 }
 
 .img-hover {
   opacity: 0;
-  position: absolute;
-  inset: 0;
   z-index: 2;
 }
 
-/* TEXT */
+/* TEXT (centered on each image) */
 .img-text,
 .img-text-hover {
   position: absolute;
-  bottom: 20px;
-  left: 20px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   color: white;
-  font-size: 18px;
+  font-size: 20px;
   font-weight: bold;
-  text-shadow: 0 0 5px black;
-  width: 70%;
-  z-index: 3;
+  text-align: center;
+  text-shadow: 0 0 8px black;
+  width: 80%;
   transition: opacity 0.3s ease;
+  z-index: 3;
 }
 
 .img-text-hover {
   opacity: 0;
 }
 
-/* HOVER EFFECTS */
+/* HOVER EFFECTS (swap images + swap text) */
 .img-container:hover .img-base { opacity: 0; }
 .img-container:hover .img-hover { opacity: 1; }
 .img-container:hover .img-text { opacity: 0; }
