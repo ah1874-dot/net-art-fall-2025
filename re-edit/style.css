@@ -1,4 +1,4 @@
-/* Grid container */
+
 #image-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -6,20 +6,20 @@
   padding: 20px;
 }
 
-/* Image container */
+
 .img-container {
   position: relative;
   width: 100%;
   overflow: hidden;
-  border-radius: 10px; /* optional, makes corners rounded */
+  border-radius: 10px;
 }
 
-/* Base + hover images */
+
 .img-container img {
   width: 100%;
   height: auto;
   display: block;
-  object-fit: cover; /* ensures images cover container */
+  object-fit: cover; 
   transition: opacity 0.3s ease;
 }
 
@@ -36,11 +36,11 @@
   z-index: 2;
 }
 
-/* Text overlays */
+
 .img-text,
 .img-text-hover {
   position: absolute;
-  bottom: 20px; /* appear near bottom for better readability */
+  bottom: 20px; 
   left: 20px;
   color: white;
   font-size: 18px;
@@ -55,7 +55,6 @@
   opacity: 0;
 }
 
-/* Hover transitions */
 .img-container:hover .img-base {
   opacity: 0;
 }
