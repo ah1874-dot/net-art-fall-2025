@@ -114,7 +114,7 @@ const items = [
     img: "img5",
     imgHover: "img5a",
     text: "I’m lost without you.",
-    textHover: "A pity your poor navigational skills."
+    textHover: "I pity your poor navigational skills."
   },
   {
     img: "img5",
